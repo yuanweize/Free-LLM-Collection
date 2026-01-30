@@ -173,19 +173,6 @@
             }
         },
         {
-            "provider": "or",
-            "model": "x-ai/grok-4.1-fast:free",
-            "tags": [
-                "medium",
-                "coding",
-                "thinking"
-            ],
-            "rate_limit": {
-                "rpm": 20,
-                "rpd": 200
-            }
-        },
-        {
             "provider": "xm",
             "model": "熊猫-A-5-grok-4.1",
             "tags": [
@@ -269,18 +256,6 @@
             "rate_limit": {
                 "rpm": 10,
                 "rpd": 100
-            }
-        },
-        {
-            "provider": "or",
-            "model": "xiaomi/mimo-v2-flash:free",
-            "tags": [
-                "medium",
-                "thinking"
-            ],
-            "rate_limit": {
-                "rpm": 20,
-                "rpd": 200
             }
         },
         {
@@ -414,6 +389,18 @@
         },
         {
             "provider": "or",
+            "model": "openai/gpt-oss-120b:free",
+            "tags": [
+                "pro",
+                "thinking"
+            ],
+            "rate_limit": {
+                "rpm": 20,
+                "rpd": 200
+            }
+        },
+        {
+            "provider": "or",
             "model": "deepseek/deepseek-chat-v3.1:free",
             "tags": [
                 "pro",
@@ -534,30 +521,6 @@
         },
         {
             "provider": "or",
-            "model": "qwen/qwen3-235b-a22b:free",
-            "tags": [
-                "pro",
-                "coding"
-            ],
-            "rate_limit": {
-                "rpm": 20,
-                "rpd": 200
-            }
-        },
-        {
-            "provider": "or",
-            "model": "kwaipilot/kat-coder-pro:free",
-            "tags": [
-                "pro",
-                "coding"
-            ],
-            "rate_limit": {
-                "rpm": 20,
-                "rpd": 200
-            }
-        },
-        {
-            "provider": "or",
             "model": "arcee-ai/trinity-mini:free",
             "tags": [
                 "fast"
@@ -576,17 +539,6 @@
             "rate_limit": {
                 "rpm": 15,
                 "rpd": 150
-            }
-        },
-        {
-            "provider": "or",
-            "model": "tencent/hunyuan-a13b-instruct:free",
-            "tags": [
-                "medium"
-            ],
-            "rate_limit": {
-                "rpm": 20,
-                "rpd": 200
             }
         },
         {
@@ -635,17 +587,6 @@
             "rate_limit": {
                 "rpm": 10,
                 "rpd": 100
-            }
-        },
-        {
-            "provider": "or",
-            "model": "meituan/longcat-flash-chat:free",
-            "tags": [
-                "fast"
-            ],
-            "rate_limit": {
-                "rpm": 20,
-                "rpd": 200
             }
         },
         {
@@ -746,37 +687,15 @@
             }
         },
         {
-            "provider": "or",
-            "model": "allenai/olmo-3-32b-think:free",
+            "provider": "bm",
+            "model": "GLM-4.6-Flash",
             "tags": [
                 "medium",
                 "thinking"
             ],
             "rate_limit": {
-                "rpm": 20,
-                "rpd": 200
-            }
-        },
-        {
-            "provider": "or",
-            "model": "mistralai/devstral-2512:free",
-            "tags": [
-                "coding"
-            ],
-            "rate_limit": {
-                "rpm": 20,
-                "rpd": 200
-            }
-        },
-        {
-            "provider": "or",
-            "model": "amazon/nova-2-lite-v1:free",
-            "tags": [
-                "fast"
-            ],
-            "rate_limit": {
-                "rpm": 20,
-                "rpd": 200
+                "rpm": 60,
+                "rpd": 86400
             }
         },
         {
@@ -934,6 +853,17 @@
             }
         },
         {
+            "provider": "or",
+            "model": "nvidia/nemotron-nano-12b-v2-vl:free",
+            "tags": [
+                "fast"
+            ],
+            "rate_limit": {
+                "rpm": 20,
+                "rpd": 200
+            }
+        },
+        {
             "provider": "bm",
             "model": "GLM-4-Flash-250414",
             "tags": [
@@ -1038,6 +968,28 @@
             }
         },
         {
+            "provider": "or",
+            "model": "nvidia/nemotron-nano-9b-v2:free",
+            "tags": [
+                "fast"
+            ],
+            "rate_limit": {
+                "rpm": 20,
+                "rpd": 200
+            }
+        },
+        {
+            "provider": "or",
+            "model": "allenai/molmo-2-8b:free",
+            "tags": [
+                "fast"
+            ],
+            "rate_limit": {
+                "rpm": 20,
+                "rpd": 200
+            }
+        },
+        {
             "provider": "g",
             "model": "gemma-3-4b",
             "tags": [
@@ -1047,6 +999,29 @@
             "rate_limit": {
                 "rpm": 30,
                 "rpd": 1440
+            }
+        },
+        {
+            "provider": "or",
+            "model": "liquid/lfm-2.5-1.2b-thinking:free",
+            "tags": [
+                "fast",
+                "thinking"
+            ],
+            "rate_limit": {
+                "rpm": 20,
+                "rpd": 200
+            }
+        },
+        {
+            "provider": "or",
+            "model": "liquid/lfm-2.5-1.2b-instruct:free",
+            "tags": [
+                "fast"
+            ],
+            "rate_limit": {
+                "rpm": 20,
+                "rpd": 200
             }
         }
     ]
